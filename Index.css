@@ -166,4 +166,36 @@ main{
     flex-direction: column;
     gap: 0.5rem;
 }
+.Card{
+    border: 1px solid var(--Gry);
+    border-radius: 1rem;
+}
+.card-img img{
+    border-top-right-radius: 1rem;       
+    border-top-left-radius: 1rem;       
 
+}
+.card-body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: var(--Brown);
+}
+.card-body p{
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.card-body h3{
+font-size: 24px;
+}
+.card-body button{
+    width: fit-content;
+}
+.card-body a{
+   font-size: 0.8rem;
+   color: var(--Brown);
+   font-family: sans-serif;
+}
