@@ -129,4 +129,15 @@ main{
     font-size: 60px;
     font-weight: 1000;
 }
+.hero-img img{
+    width: 785px;
+    height: 393px;
+}
+.Hero-Section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
 
