@@ -7,7 +7,7 @@
     font-family: "Flamenco", system-ui;
 }
 body{
-    
+    background-color: rgb(248, 241, 231);
 }
 
 :root{
@@ -17,4 +17,100 @@ body{
     --Gry:#737373;
     --light:#F8F1E7;
 }
+
+/* Nav Bar Started */
+header{
+    padding: 0rem 16rem;
+    border-bottom: 1px solid #662c19;
+
+}
+.Nav-Bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.logo-bk svg{
+    width: 163.03px;
+    font-weight: 100;
+}
+.menu-btn-nav i{
+    font-size: 1.2rem;
+}
+.user-cart-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.user i{
+    color: var(--Brown);
+    font-size: 1.2rem;
+}
+.view-cart{
+    border: 1px solid var(--Gry);
+    border-radius: 1.5rem;
+    display: flex;
+    gap: 0.7rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    background-color: transparent;
+    color: var(--Gry);
+    font-family: sans-serif;
+}
+.view-cart span{
+    font-weight: 800;
+}
+.menu-btn-nav .logo-bk{
+  display: none;   
+}
+
+@media(max-width:1400px){
+    header{
+        padding: 0rem 5rem;
+    }
+}
+@media(max-width:1200px){
+    header{
+        padding: 0rem 3rem;
+    }
+}
+@media(max-width:992px){
+    header{
+        padding: 0rem 2rem;
+    }
+}
+@media(max-width:960px){
+   .view-cart{
+    display: none;
+   } 
+   .menu-btn-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+   }
+   .logo-bk{
+    display: none;
+   }
+   .menu-btn-nav .logo-bk{
+         display: block;
+   }
+   .menu-btn-nav .logo-bk svg{
+    width: 163.03px;
+    font-weight: 100;
+   }
+}
+@media(max-width:450px){
+.user i{
+    font-size: 1.1rem;
+}
+header{
+    padding: 0rem 1.5rem;
+}
+}
+
+
+/* Nav-Bar Ended */
 
