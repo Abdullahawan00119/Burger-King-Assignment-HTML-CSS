@@ -128,6 +128,7 @@ main{
     font-weight: bold;
     line-height: 3rem;
     font-size: 62px;
+    width: 397px;
 }
 .hero-img img{
     width: 785px;
@@ -136,6 +137,7 @@ main{
 .Hero-Section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
     justify-content: center;
     align-items: center;
     gap: 2rem;
