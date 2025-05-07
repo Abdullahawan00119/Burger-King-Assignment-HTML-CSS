@@ -1,17 +1,19 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap');
+@font-face {
+    font-family: Flame-Regular;
+    src: url("./Assets/fonts/Flame-Regular.otf");
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Flamenco";
+    font-family: "Flame-Regular";
 }
 body{
     background-color: rgb(248, 241, 231);
 }
 
 :root{
-    --Flame-font: font-family: "Flamenco", system-ui;
     --Red:#D62300;
     --Brown:#502314;
     --Gry:#737373;
@@ -22,7 +24,6 @@ body{
 header{
     padding: 0rem 16rem;
     border-bottom: 1px solid #662c19;
-
 }
 .Nav-Bar{
     display: flex;
@@ -57,10 +58,9 @@ header{
     padding: 0.6rem 1rem;
     background-color: transparent;
     color: var(--Gry);
-    font-family: sans-serif;
 }
 .view-cart span{
-    font-weight: 800;
+    font-weight: normal;
 }
 .menu-btn-nav .logo-bk{
   display: none;   
@@ -113,21 +113,21 @@ header{
 /* Nav-Bar Ended */
 
 main{
-    padding: 1rem 16rem;
+    padding: 1.5rem 16rem;
 }
 .Left-text-hero{
     display: flex;
     flex-direction: column;
-    /* gap: 1.5rem; */
+    gap: 2rem;
 }
 .Left-text-hero button{
     width: fit-content;
 }
 .Left-text-hero h1{
     color: var(--Brown);
-    font-weight: bolder;
-    font-size: 60px;
-    font-weight: 1000;
+    font-weight: bold;
+    line-height: 3rem;
+    font-size: 62px;
 }
 .hero-img img{
     width: 785px;
@@ -136,8 +136,32 @@ main{
 .Hero-Section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 1rem;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+}
+.Left-text-hero button{
+    padding: 0.8rem 4.8rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    font-weight: normal;
+}
+.Order-delivery-btn{
+    background-color: transparent;
+    color: var(--Brown);
+    border: 1px solid var(--Brown);
+}
+.Order-Pickup-btn{
+    background-color: var(--Red);
+    color: var(--light);
+    border: 1px solid var(--Red);
+}
+.btn-section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
