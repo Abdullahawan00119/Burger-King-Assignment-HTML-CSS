@@ -196,8 +196,7 @@ main {
   }
   .Hero-Section {
     grid-template-columns: repeat(1, 1fr);
-    margin-top:0rem;
-    
+    margin-top: 0rem;
   }
   .Hero-Section .Left-text-hero {
     grid-row: 2;
@@ -304,13 +303,13 @@ main {
   color: var(--Brown);
   font-family: sans-serif;
 }
-.card-body button{
-    padding: 0.5rem 1rem;
-    border-radius: 1.5rem;
-    border: 1px solid var(--Brown);
-    color: var(--Brown);
-    position: relative;
-    left: 80%;
+.card-body button {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--Brown);
+  color: var(--Brown);
+  position: relative;
+  left: 80%;
 }
 @media (max-width: 1200px) {
   .Card {
@@ -334,5 +333,89 @@ main {
   }
   .card-img img {
     width: 100%;
+  }
+}
+@media (max-width: 515px) {
+  .card-body button {
+    left: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .card-body button {
+    left: 65%;
+  }
+}
+/* Main Ended */
+
+.App-section {
+  padding: 0rem 20rem;
+  background: rgba(238, 232, 222, 1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+.Mobile-App-Scane-img img {
+  width: 447px;
+  height: 431px;
+  position: relative;
+  bottom: 3rem;
+}
+.App-btn-section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 1);
+  border: none;
+  color: white;
+  gap: 1rem;
+}
+.App-btn-section button h5 {
+  font-weight: normal;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.App-btn-section button h3 {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+.App-btn-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.App-btn-section button i {
+  font-size: 35px;
+}
+.App-Right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.App-Right-content h1 {
+  color: var(--Brown);
+  font-family: "Flame-Regular";
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 3.5rem;
+}
+.App-Right-content p {
+  color: var(--Brown);
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+@media (max-width: 950px) {
+  .App-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Mobile-App-Scane-img {
+    display: none;
+  }
+  .App-Right-content{
+    width: 80vw;
   }
 }
