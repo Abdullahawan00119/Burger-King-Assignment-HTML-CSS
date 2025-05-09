@@ -26,6 +26,9 @@ header {
   padding: 0rem 16rem;
   border-bottom: 1px solid #662c19;
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--light);
 }
 .Nav-Bar {
   display: flex;
@@ -117,6 +120,7 @@ header {
 
 main {
   padding: 1.5rem 16rem;
+  margin-top: 3rem;
 }
 .Left-text-hero {
   display: flex;
@@ -193,6 +197,7 @@ main {
 @media (max-width: 992px) {
   main {
     padding: 0rem 2rem;
+    margin-top: 0rem;
   }
   .Hero-Section {
     grid-template-columns: repeat(1, 1fr);
@@ -319,6 +324,11 @@ main {
     width: 100%;
   }
 }
+@media (max-width: 1100px) {
+  .Card {
+    width: 470px;
+  }
+}
 @media (max-width: 992px) {
   .Card {
     width: 450px;
@@ -339,14 +349,32 @@ main {
   .card-body button {
     left: 70%;
   }
+  .Card {
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
   .card-body button {
     left: 65%;
   }
+  .Card {
+    width: 320px;
+  }
+}
+@media (max-width: 375px) {
+  .hero-img img {
+    width: 100%;
+  }
+  .Left-text-hero button {
+    margin-left: 3.5rem;
+  }
+  .App-section .App-Right-content {
+    width: 90vw;
+  }
 }
 /* Main Ended */
 
+/* App Section started */
 .App-section {
   padding: 0rem 20rem;
   background: rgba(238, 232, 222, 1);
@@ -355,18 +383,21 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 6rem;
+  padding-bottom: 1.5rem;
 }
 .Mobile-App-Scane-img img {
   width: 447px;
-  height: 431px;
+  height: 460px;
   position: relative;
   bottom: 3rem;
 }
+.medium-screen-img {
+  display: none;
+}
 .App-btn-section button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 0.5rem;
   background-color: rgba(0, 0, 0, 1);
   border: none;
@@ -380,7 +411,7 @@ main {
   text-transform: uppercase;
 }
 .App-btn-section button h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: sans-serif;
 }
 .App-btn-section {
@@ -408,14 +439,107 @@ main {
   font-family: sans-serif;
   font-size: 0.9rem;
 }
+.Copy-right {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Brown);
+  margin-bottom: 3rem;
+}
+.Copy-right p,
+a {
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  color: var(--light);
+  font-weight: 400;
+}
 @media (max-width: 950px) {
-  .App-section {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .Mobile-App-Scane-img {
     display: none;
   }
-  .App-Right-content{
+
+  .img-heading img {
+    display: block;
+    width: 160px;
+    height: 224px;
+    position: relative;
+    bottom: 2rem;
+  }
+  .img-heading {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 15rem;
+    gap: 1rem;
+  }
+  .img-heading h1 {
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+  .App-Right-content {
     width: 80vw;
+    gap: 1rem;
+  }
+  .App-btn-section {
+    justify-content: center;
+    margin-top: -1rem;
+  }
+  .Copy-right {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
+@media (max-width: 768px) {
+  .img-heading {
+    margin-right: 0rem;
+  }
+  .App-section {
+    padding: 0rem 3rem 1.5rem;
+  }
+  .App-btn-section button {
+    padding: 0.8rem;
+  }
+  .App-btn-section button h5 {
+    font-size: 0.7rem;
+  }
+  .App-btn-section button h3 {
+    font-size: 1.1rem;
+  }
+
+  .App-btn-section button i {
+    font-size: 30px;
+  }
+}
+
+/* App Section Ended */
+
+/* footer Started */
+footer a {
+  color: var(--Brown);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+}
+footer {
+  display: flex;
+  padding: 16px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  bottom: 0rem;
+  background-color: var(--light);
+  width: 100%;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-links img {
+  width: 20px;
+}
+
+/* footer Ended */
